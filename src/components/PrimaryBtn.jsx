@@ -1,9 +1,7 @@
 import React from "react";
 
 const PrimaryBtn = ({
-  label = "Click Me",
-  onClick = () => {},
-  className = "",
+  label,
   variant = "black",
 }) => {
   const baseStyle =
@@ -18,8 +16,7 @@ const PrimaryBtn = ({
 
   return (
     <button
-      onClick={onClick}
-      className={`${baseStyle} ${variants[variant]} ${className}`}
+      className={`${baseStyle} ${variants[variant]}`}
     >
       {label}
     </button>
