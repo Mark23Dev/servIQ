@@ -1,0 +1,29 @@
+import React from "react";
+
+const PrimaryBtn = ({
+  label = "Click Me",
+  onClick = () => {},
+  className = "",
+  variant = "black",
+}) => {
+  const baseStyle =
+    "px-5 py-2 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2";
+
+  const variants = {
+    black: "bg-black text-white hover:bg-gray-800 focus:ring-gray-700",
+    blue: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500",
+    outline:
+      "border border-gray-800 text-gray-800 hover:bg-gray-100 focus:ring-gray-500",
+  };
+
+  return (
+    <button
+      onClick={onClick}
+      className={`${baseStyle} ${variants[variant]} ${className}`}
+    >
+      {label}
+    </button>
+  );
+};
+
+export default PrimaryBtn;
