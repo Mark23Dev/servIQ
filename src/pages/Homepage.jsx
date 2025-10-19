@@ -12,11 +12,11 @@ const Homepage = () => {
     <div className="">
       <Navbar />
       <Hero />
-      <Footer />
       <Categories />
       <Services />
       <Testimonials />
       <EmailSubscription />
+      <Footer />
     </div>
   )
 }
