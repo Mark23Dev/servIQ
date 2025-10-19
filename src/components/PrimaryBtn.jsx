@@ -5,7 +5,7 @@ const PrimaryBtn = ({
   variant = "black",
 }) => {
   const baseStyle =
-    "px-5 py-2 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2";
+    "px-8 py-4 rounded-sm text-2xl text-white/90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2";
 
   const variants = {
     black: "bg-black text-white hover:bg-gray-800 focus:ring-gray-700",
